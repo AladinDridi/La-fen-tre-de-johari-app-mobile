@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.meher.appjhr">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|mcc|mnc"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+
+       android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.meher.appjhr.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.meher.appjhr.introductionActivity"
+            android:label="@string/title_activity_introduction"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.DefnitionJohari"
+            android:label="@string/title_activity_defnition_johari"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.EtudierJohari"
+            android:label="@string/title_activity_etudier_johari"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.meher.appjhr.taboneActivity" />
+        <activity android:name="com.example.meher.appjhr.tabtwoActivity" />
+        <activity android:name="com.example.meher.appjhr.tabthreeActivity" />
+        <activity
+            android:name="com.example.meher.appjhr.ParametreActivity"
+            android:label="@string/title_activity_parametre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.aproposActivity"
+            android:label="@string/title_activity_apropos"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5dc2425df89618e1fef65a5b31616e3adbae5f76" />
+
+        <activity
+            android:name="com.example.meher.appjhr.EvaluationActivity"
+            android:label="Evaluation de base" />
+        <activity
+            android:name="com.example.meher.appjhr.EvaluationTesting"
+            android:label="@string/title_activity_evaluation_testing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.firstQuestions"
+            android:label="@string/title_activity_first_questions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.ResultatActivity"
+            android:label="Résultat  " />
+        <activity
+            android:name="com.example.meher.appjhr.ListResults"
+            android:label="@string/title_activity_list_results"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.ourHashtag"
+            android:icon="@drawable/tw__composer_logo_blue"
+            android:label="@string/title_activity_our_hashtag"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.meher.appjhr.ListScrollingActivity"
+            android:label="@string/title_activity_list_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.meher.appjhr.Main2Activity" android:label="Liste Des Résultats"
+            ></activity>
+    </application>
+
+</manifest>

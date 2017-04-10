@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.meher.appjhr.firstQuestions"
+    tools:showIn="@layout/activity_first_questions">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/framelayout1"
+        android:background="#eab6ca"
+        android:layout_height="50dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Evaluation Johari"
+            android:id="@+id/textView10"
+            android:layout_gravity="left|top" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ddedef"
+            android:drawableLeft="@drawable/icon_home"
+            android:text="Acceuil"
+            android:id="@+id/button_acceuil"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/framelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/cardQ1">
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q1.Si un de mes collègues est en conflit avec une personne que nous connaissons bien tous les deux, et qu’il semble important pour lui de bien s’entendre avec cette personne :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:textColor="@color/tw__blue_pressed"
+            android:text="Je dis à mon collègue que je le considère partiellement responsable de ses problèmes avec cette personne et je cherche à lui faire savoir comment cette dernière fut affectée par sa façon d’agir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponseA"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion1"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardQ2"
+    android:layout_marginTop="22dp"
+    android:layout_below="@+id/cardQ1"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:text="Q2.Si un de mes collègues et moi avons une violente dispute et que depuis, je remarque qu’il ne semble plus à l’aise avec moi :"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginTop="62dp"
+        android:textStyle="bold"
+        android:textColor="@color/tw__blue_pressed"
+        android:text="Je prends l’initiative d’aborder ce sujet et je lui demande de quelle manière il sent que cette dispute a affecté notre relation."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/reponseB"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="175dp"
+        android:layout_width="50dp"
+        android:text="Rep:0"
+        android:layout_height="30dp" />
+    <SeekBar
+        android:id="@+id/seekquestion2"
+        android:layout_marginLeft="90dp"
+        android:visibility="visible"
+        android:layout_marginTop="177dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ3"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q3.Si un collègue commence à m’éviter et se comporte de façon froide et distante envers moi :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:text="Je lui fais remarquer son comportement et lui suggère de m’informer de ce qui se passe en lui."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion3"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ4"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ3"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q4.Si deux de mes collègues et moi sommes en train de parler lorsque l’un d’eux glisse dans la conversation un problème personnel qui m’implique avec l’autre collègue, sans que celui-ci en soit encore prévenu :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="86dp"
+            android:textStyle="bold"
+            android:text="J’informe le collègue concerné de la situation en question, et suggère d’y rebenir plus tard pour en parler plus abondamment."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion4"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cardQ4"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/cardQ5">
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q5.Si une de mes collègues est en train de me dire, qu’à son avis, j’agis de façon moins efficace que je pourrais le faire dans une réunion :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:textColor="@color/tw__blue_pressed"
+            android:text="Je lui demande de me décrire ce qu’elle a observé et de me suggérer des changements que je pourrais apporter à ma façon d’agir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse5"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion5"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ6"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ5"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q6.Si un de mes copains aspire à un emploi dans mon équipe, emploi pour lequel je le crois non qualifié, et s’il est pris à l’essai par le chef de notre groupe :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:textColor="@color/tw__blue_pressed"
+            android:text="Je fais part de mes impressions à l’un et à l’autre et les laisse prendre la décision finale face à la situation."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse6"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion6"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ7"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ6"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q7.Si je crois que l’un de mes collègues a été malhonnête envers moi et d’autres de notre groupe, mais qu’aucun n’en a jamais parlé :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:text="Je demande aux membres d groupe comment ils perçoivent la situation pour savoir qu’ils voient eux aussi que le collègue en question fut malhonnête."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse7"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion7"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ8"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ7"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q8.Si je suis préoccupé par quelque problème personnel et qu’un collègue me dit que je deviens irritable envers lui et envers d’autres, que je me dispute pour des riens :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="86dp"
+            android:textStyle="bold"
+            android:text="Je lui confie que je suis préoccupé, que peur être je serai irritable pour quelque temps encore et qu’en conséquence je préfère qu’on ne me dérange pas."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse8"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion8"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cardQ8"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/cardQ9">
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q9.Si j’ai entendu des collègues parler d’une rumeur désobligeante concernant un de mes amis, et pouvant le blesser, et si cet ami me demande si je sais quelque chose à ce propos :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:text="Je lui dis exactement ce que j’ai entendu, quand je l’ai entendu et qui étaient les personnes qui en parlaient."
+            android:textColor="@color/tw__blue_pressed"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse9"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion9"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ10"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ9"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q10.Si un collègue me mentionne que je semble avoir un conflit de personnalité avec une autre collègue, alors qu’il m’est important de bien m’entendre avec cette dernière :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="71dp"
+            android:textStyle="bold"
+            android:textColor="@color/tw__blue_pressed"
+            android:text="J’en parle ouvertement avec lui pour découvrir comment mon comportement en est affecté."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion10"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ11"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ10"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q11.Si mes liens d’amitié avec quelqu’un on été quelque peu altérés par des discussions difficiles, à propos d’un sujet qui nous tient tous deux à cœur :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="71dp"
+            android:textStyle="bold"
+            android:text="J’identifie le sujet controversé entre nous et je lui suggère d’en discuter pour en arriver à préciser ce qui nous sépare et nous réconcilie."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse11"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion11"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ12"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ11"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q12.Si lors d’une discussion personnelle avec un collègue, il est question de ses problèmes et de son comportement, et qu’il me suggère soudainement de parler un peu de moi, de mes problèmes et de mon comportement, puisque nous parlons des siens :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="86dp"
+            android:textStyle="bold"
+            android:text="J’accepte volontiers d’entendre ses commentaires à mon sujet et je l’encourage à m’en faire part."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse12"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion12"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cardQ12"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/cardQ13">
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q13.Si un de mes collègues me parle de ses sentiments hostiles envers un autre collègue qu’il considère comme peu correct envers les autres (commentaires avec lequel je suis tout à fait d’accord) :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="85dp"
+            android:textStyle="bold"
+            android:text="Je l’écoute et je lui exprime me propres sentiments de façon à ce qu’il sache quelle est ma position."
+            android:textColor="@color/tw__blue_pressed"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse13"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion13"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ14"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ13"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q14.Si je crois qu’une rumeur désobligeante circule à mon sujet et que je soupçonne un de mes collègues de l’avoir entendu sans la contredire :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:text="Je prend le risque d’en parler ouvertement en lui demandant ce qu’il sait de toute cette histoire."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse14"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion14"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ15"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ14"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q15.Si j’ai remarqué chez un collègue, lors d rencontres sociales, nombre de petites choses qui sont de nature à heurter ses bonnes relations d’amitié :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="72dp"
+            android:textStyle="bold"
+            android:text="Je prends le risque d’être perçu come quelqu’un qui se mêle des affaires des autres et lui dis ce que j’ai observé et mes propres réactions à son comportement."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse15"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion15"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ16"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ15"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q16.Si deux de mes collègues et moi sommes n train de parler de parler et que l’un d’eux abordent un abordent un problème personnel qui me concerne,mais duquel je n’étais pas au courant :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="86dp"
+            android:textStyle="bold"
+            android:text="Je les presse de question pour en savoir davantage et connaître leurs propres réactions à ce sujet."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse16"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion16"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/cardQ16"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/cardQ17">
+
+        <TextView
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:text="Q17.Si un collègue semble préoccupé, se fâche pour des choses qui me paraissent sans importance et devint irritable envers moi et les autres sans raison apparent :"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:textStyle="bold"
+            android:text="J’essaie d lui parler de sa façon d’agir, lui mentionnant comment il affecte les autres autour de lui."
+            android:textColor="@color/tw__blue_pressed"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse17"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion17"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ18"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ17"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q18.Si certains gestes, comportements ou habitudes d’un d mes collègues m deviennent insupportables au point qu’il m’est difficile d’avoir plaisir de le rencontrer :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="71dp"
+            android:textStyle="bold"
+            android:text="Je me permets de lui exprimer ouvertement mes sentiments de façon à clarifier l’équivoque et à poursuivre ds relations agréables avec lui."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse18"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion18"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ19"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ18"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q19.Lorsque je discute de comportements sociaux avec un collègue extrêmement sensible :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:text="Je souligne ses faiblesses et lacunes pour l’aider à améliorer ses relations interpersonnelles."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse19"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion19"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardQ20"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cardQ19"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <TextView
+            android:textStyle="italic"
+            android:text="Q20.Si je sais que l’on doit m’attribuer un poste important et que je remarque depuis ce temps que l’attitude de mes collègues devient assez négative envers moi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="86dp"
+            android:textStyle="bold"
+            android:text="Je discute de ce constat avec mes collègues de façon a savoir si mon comportement ne s’est pas altéré à la suite de cette nouvelle et de quelle façon l’améliorer."
+            android:textColor="@color/tw__blue_pressed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/reponse20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+        <SeekBar
+            android:id="@+id/seekquestion20"
+            android:layout_marginLeft="90dp"
+            android:visibility="visible"
+            android:layout_marginTop="177dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:id="@+id/textResultat_retroaction"
+        android:layout_below="@id/cardQ20"
+        android:layout_marginTop="22dp"
+        android:text="Receptivité à la rétroaction:0"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textResultat_autrui"
+        android:layout_below="@id/textResultat_retroaction"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:text="Ouverture à autrui:0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

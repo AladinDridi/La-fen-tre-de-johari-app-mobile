@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/colleur"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.meher.appjhr.EvaluationTesting"
+    tools:showIn="@layout/activity_evaluation_testing">
+
+    <FrameLayout
+        android:id="@+id/cardevaluation_example"
+        android:background="@drawable/arriereplan5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textexampel_question"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold|italic"
+            android:text="Si un de mes collègues est en conflit avec une personne que nous connaissons bien tous les deux,et qu’il semble important pour lui de bien s’entendre avec  cette personne :"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_marginTop="85dp"
+            android:id="@+id/situationA"
+            android:textStyle="bold|italic"
+            android:text="Je dis à mon collègue que je le considère partiellement responsable de ses problèmes avec cette personne et je cherche à lui faire savoir comment cette dernière fut affectée par sa façon d’agir"
+            android:layout_width="match_parent"
+            android:textColor="#af4853"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/reponseA"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_width="50dp"
+            android:text="Rep:0"
+            android:layout_height="30dp" />
+<SeekBar
+    android:id="@+id/seek01"
+    android:layout_marginLeft="90dp"
+    android:visibility="visible"
+    android:layout_marginTop="177dp"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content" />
+
+        <TextView
+    android:layout_marginTop="220dp"
+    android:text="Vous remarquez que pour chaque possibilité de distribution illustrée ci-dessus, la notation est toujours égale maximum  5."
+    android:layout_width="match_parent"
+    android:textStyle="bold"
+    android:layout_height="match_parent" />
+
+
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_marginTop="410dp"
+            android:background="@color/coleurdeboutton0"
+            android:text="Etes vous Prêt ?"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/begin"
+            android:icon="@drawable/check"
+            android:title="Commencer" />
+        <item
+            android:id="@+id/informationget"
+            android:icon="@drawable/info_black"
+            android:title="C'est Quoi fenetre Johari ?" />
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/star_black"
+            android:title="Liste des resultats" />
+        <item
+            android:id="@+id/setting_get"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Parametres" />
+    </group>
+
+    <item android:title="communication">
+        <menu>
+            <item
+                android:id="@+id/contact_access"
+                android:icon="@drawable/heart_black"
+                android:title="A propos" />
+            <item
+                android:id="@+id/exit_click"
+                android:icon="@drawable/tw__ic_logo_default"
+                android:title="#AppJohari" />
+        </menu>
+    </item>
+
+        <item
+            android:id="@+id/quitter"
+            android:icon="@drawable/power_black"
+            android:title="Quitter" />
+
+
+</menu>

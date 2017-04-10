@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/colleur"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <android.support.v7.widget.CardView
+    android:id="@+id/cardview1"
+        android:background="@drawable/arriereplan5"
+        android:layout_width="wrap_content"
+    android:layout_height="150dp">
+    <TextView
+        android:text="Appuyez sur les sujets ci-dessous pour en savoir plus sur la fenêtre de Johari et son utilisation."
+        android:textSize="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="match_parent" />
+
+
+</android.support.v7.widget.CardView>
+<FrameLayout
+    android:id="@+id/framelayout0"
+    android:layout_width="wrap_content"
+    android:layout_below="@+id/cardview1"
+    android:layout_height="match_parent">
+  <Button
+      style="?android:attr/buttonStyleInset"
+      android:layout_width="wrap_content"
+      android:id="@+id/cquoijohaributton"
+      android:drawableLeft="@drawable/ic_learning"
+      android:background="#bcdce1"
+      android:text="Johari?"
+      android:layout_below="@+id/cardview1"
+      android:layout_height="match_parent" />
+        <Button
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:id="@+id/inventedbutton"
+            android:drawableLeft="@drawable/ic_learning"
+            android:background="#bcdce1"
+            android:text="inventé par ?"
+            android:layout_below="@+id/cardview1"
+            android:layout_height="match_parent" />
+        <Button
+            style="?android:attr/buttonStyleInset"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:id="@+id/utilisable_ou"
+            android:drawableLeft="@drawable/ic_learning"
+            android:background="#bcdce1"
+            android:text="Utilise ou?"
+            android:layout_below="@+id/cardview1"
+            android:layout_height="match_parent" />
+</FrameLayout>
+        <android.support.v7.widget.CardView
+            android:visibility="invisible"
+            android:id="@+id/cardview2"
+            android:background="@drawable/arriereplan5"
+            android:layout_below="@+id/framelayout0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_view01"
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:src="@drawable/imagejohari" />
+            <TextView
+                android:id="@+id/TextVisible01"
+
+                android:layout_marginTop="220dp"
+                android:textStyle="italic"
+                android:textSize="11dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+</ScrollView>
